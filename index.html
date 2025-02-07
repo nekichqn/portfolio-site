@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saera IIJIMA</title>
+    <!-- フォントのインポート -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&family=Klee+One:wght@400;600&family=Shippori+Mincho+B1:wght@400;500;600;700;800&family=Shippori+Mincho:wght@400;500;600;700;800&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="main-navigation">
+        <nav>
+          <ul>
+            <li><a href="#profile">PROFILE</a></li>
+            <li><a href="#skill">SKILL</a></li>
+            <li><a href="#works">WORK</a></li>
+          </ul>
+        </nav>
+      </div>
+      <img src="images/main.png" alt="メインイメージ" />
+    </header>
+
+    <div class="profile" id="profile">
+      <img
+        src="images/profile.png"
+        alt="プロフィール画像"
+        class="profile-image"
+      />
+
+      <div class="card">
+        <div class="text__left">
+          <p>名前：</p>
+          <p>誕生日：</p>
+          <p>出身地：</p>
+          <p>趣味：<br><br></p>
+          <p>MBTI：</p>
+        </div>
+
+        <div class="text__right">
+          <p>飯島　さえら</p>
+          <p>2003/04/07</p>
+          <p>東京都</p>
+          <p>邦ロック 映画鑑賞 ダンス<br>プラネタリウム かわいいもの集め</p>
+          <p>ENFP-運動家-</p>
+        </div>
+      </div>
+
+    <div class="video" id="video">
+      <video src="video.mp4" controls></video>
+    </div>
+
+    <div class="skill" id="skill">
+      <img src="images/skill.png" alt="技術" />
+      <div class="skills-list">
+        <p>HTML</p>
+        <p>CSS</p>
+        <p>JavaScript</p>
+        <p>Photoshop</p>
+        <p>Illustrator</p>
+      </div>
+    </div>
+
+    <div class="works" id="works">
+      <img src="images/Work.png" alt="作品一覧" />
+      <div class="work">
+        <h2>WEB SITE</h2>
+        <div class="work_contents">
+          <div class="work_img">
+            <img src="images/work02.png" alt="MBTI愛性診断サイト" />
+          </div>
+          <div class="work_text">
+            <h3>♡ MBTI愛性診断サイト</h3>
+            <p>JS、TailwindCSSを利用して流行りのMBTI相性診断を制作しました。<br>愛性というテーマを決めてキューピットをモチーフに愛性がいいと<br>ハートがたくさん表示されるように工夫しました。</p>
+            <!-- GO WEBSITE ボタン -->
+            <a href="./work/MBTI愛性診断/index.html" class="go-website-btn">→ GO TO WEBSITE</a>
+          </div>
+        </div>
+        <div class="work_contents">
+          <div class="work_img">
+            <img src="images/work01.png" alt="宇都宮市に行こう！サイト" />
+          </div>
+          <div class="work_text">
+            <h3>♡ 宇都宮市に行こう！サイト</h3>
+            <p>自身で撮影したオリジナル画像でお気に入りの街を紹介するサイトです。<br>今まで自分のデザインに自信が持てなかったけれど先生にアドバイス<br>いただきながら制作しました。シンプルかつ見やすいデザインができて<br>自信がついた作品です。</p>
+            <!-- GO WEBSITE ボタン -->
+            <a href="./work/宇都宮市に行こう！/index2.html" class="go-website-btn">→ GO TO WEBSITE</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="work02">
+        <h2>ILLUSTRATION</h2>
+        <div class="work_contents02">
+          <div class="work_img">
+            <img src="images/main_img01.png" alt="main_img01" />
+          </div>
+        </div>
+        <div class="work_contents02">
+          <div class="work_img">
+            <img src="images/illustration01.png" alt="illustrator01" />
+          </div>
+        </div>
+        <div class="work_contents02">
+          <div class="work_img">
+            <img src="images/illustration02.png" alt="illustrator02" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="thank">
+      <img src="images/thankyou.png" alt="ありがとうございます" />
+    </div>
+
+    <footer>
+      <p>©︎ 2025 Saera IIJIMA Portfolio, All rights reserved</p>
+    </footer>
+
+    <!-- トップに戻るボタン -->
+    <button id="scrollToTop" class="scroll-to-top">👆</button>
+
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
