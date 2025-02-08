@@ -99,7 +99,7 @@ header img {
 
 /* 左側のラベル */
 .text__left {
-  flex-basis: 40%; /* 左側を少し狭く設定 */
+  flex-basis: 50%; /* 左側を少し狭く設定 */
   padding-right: 20px; /* 右側に余白 */
   text-align: right;
   font-weight: bold;
