@@ -90,28 +90,53 @@ header img {
   margin-bottom: 50px;
 }
 
-/* カード全体のスタイル */
+.profile_contents {
+  display: flex; /* 横並びにする */
+  align-items: center; /* 垂直方向で中央揃え */
+  justify-content: center; /* 横方向で中央揃え */
+  gap: 20px; /* 左右の要素間に隙間を作る */
+  width: 100%; /* 親要素の幅を100%に設定 */
+  height: 100vh; /* 親要素の高さを100vhに設定（画面全体の高さ） */
+}
+
+.profile__img {
+  width: 30%; /* 画像のコンテナの幅を調整 */
+}
+
+.profile__img img {
+  width: 70%; /* 画像がコンテナの幅を全て使うように */
+  height: auto; /* 高さは自動で調整 */
+  border-radius: 8px;
+  border: 5px solid #c56e8a; /* 枠線 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 影 */
+}
+
+/* card のスタイル */
 .card {
-  display: flex;
-  justify-content: space-between;
+  display: flex; /* 横並びにする */
+  justify-content: flex-start; /* 左から右に並べる */
+  gap: 30px; /* 左右の要素間に適切なスペースを作る */
   padding: 20px;
+  margin-bottom: 100px;
 }
 
 /* 左側のラベル */
 .text__left {
-  flex-basis: 50%; /* 左側を少し狭く設定 */
+  flex: 1; /* 左側が残りのスペースを占めるように調整 */
   padding-right: 20px; /* 右側に余白 */
-  text-align: right;
+  text-align: right; /* 右寄せにする */
   font-weight: bold;
   font-size: 30px;
+  white-space: nowrap; /* テキストの折り返しを防止 */
 }
 
 /* 右側の内容 */
 .text__right {
-  flex-basis: 60%; /* 右側を広く設定 */
-  text-align: left;
+  flex: 2; /* 右側が左側より広く設定 */
+  text-align: left; /* 左寄せにする */
   font-weight: bold;
   font-size: 30px;
+  word-wrap: break-word; /* 長い単語の折り返しを許可 */
 }
 
 /* 各項目のスタイル */
@@ -119,18 +144,6 @@ header img {
   margin-bottom: 15px;
 }
 
-/* 動画セクション */
-.video {
-  margin: 40px 0;
-}
-
-video {
-  width: 100%;
-  max-width: 800px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 100px;
-}
 
 /* スキルセクション */
 .skill {
